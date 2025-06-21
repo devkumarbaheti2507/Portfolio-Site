@@ -14,6 +14,25 @@ body {
     margin: 0;
 }
 
+.cursor {
+    display: inline-block;
+    color: rgb(193, 134, 223);
+    animation: blink 0.7s steps(1) infinite;
+    vertical-align: baseline;
+    font-size: 1em;
+    line-height: 1;
+    margin-left: 2px;
+}
+
+#typed-text {
+    color: rgb(193, 134, 223);
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+
 /* ------------------ Desktop Styles ------------------ */
 @media screen and (min-width: 1025px) {
     .nav-bar {
@@ -25,6 +44,10 @@ body {
         box-shadow: 1px 1px 100px rgb(51, 49, 53);
         display: flex;
         justify-content: space-between;
+    }
+
+    .menu-option {
+        display: none;
     }
 
     .portfolio > h2 {
@@ -284,7 +307,7 @@ body {
         background: rgb(22, 8, 33);
         clip-path: polygon(0 5%, 50% 0, 100% 3%, 100% 100%, 0 100%);
         padding-top: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
         margin-top: -30px;
         color: rgb(245, 245, 245);
     }
@@ -401,7 +424,7 @@ body {
         height: auto;
         background: rgb(40, 15, 47);
         clip-path: polygon(0 5%, 30% 0, 100% 5%, 100% 100%, 0 100%);
-        margin-top: -40px;
+        margin-top: -100px;
         padding-top: 30px;
         padding-bottom: 40px;
     }
@@ -453,7 +476,39 @@ body {
         border-radius: 10px;
         box-shadow: 2px 2px 4px rgb(77, 77, 77);
         width: 30%;
-        height: 200px;
+        height: auto;
+        text-align: center;
+    }
+
+    .projects-list-item > img {
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .projects-list-item > h2 {
+        color: rgb(184, 184, 184);
+        font-size: 1.4em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .projects-list-item > p {
+        color: rgb(139, 139, 139);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .projects-skills {
+        display: flex;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .projects-skills > span {
+        border: 2px solid rgb(79, 38, 79);
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(68, 35, 68);
+        color: rgb(143, 104, 181);
     }
 
     .education {
@@ -609,6 +664,11 @@ body {
         margin-left: -90px;
     }
 
+    .cursor {
+        font-size: 0.95em;
+        vertical-align: baseline;
+    }
+
     .hero-text {
         font-size: 1.5em;
         margin-left: 40px;
@@ -642,6 +702,37 @@ body {
 
     .projects-list-item {
         width: 80%;
+    }
+
+    .projects-list-item > img {
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .projects-list-item > h2 {
+        color: rgb(184, 184, 184);
+        font-size: 1.4em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .projects-list-item > p {
+        color: rgb(139, 139, 139);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .projects-skills {
+        display: flex;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .projects-skills > span {
+        border: 2px solid rgb(79, 38, 79);
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(68, 35, 68);
+        color: rgb(143, 104, 181);
     }
 
     .education-item {
@@ -684,8 +775,8 @@ body {
     }
 
     .links {
-        position: fixed; /* instead of absolute */
-        top: 70px; /* adjust to be just below the navbar */
+        position: fixed;
+        top: 70px;
         right: 20px;
         background-color: rgb(39, 29, 50);
         padding: 10px 20px;
@@ -696,11 +787,11 @@ body {
         transition: all 0.3s ease-in-out;
         opacity: 0;
         pointer-events: none;
-        z-index: 9999; /* force it above all other content */
+        z-index: 9999;
     }
 
     .links.show {
-        display: flex !important; /* force it to show */
+        display: flex !important;
         flex-direction: column;
         gap: 10px;
         opacity: 1;
@@ -744,6 +835,11 @@ body {
         width: 350px;
         margin-top: 0;
         margin-left: -50px;
+    }
+
+    .cursor {
+        font-size: 0.95em;
+        vertical-align: baseline;
     }
 
     .hero-text {
@@ -917,7 +1013,7 @@ body {
         background: rgb(22, 8, 33);
         clip-path: polygon(0 5%, 50% 0, 100% 3%, 100% 100%, 0 100%);
         padding-top: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
         margin-top: -30px;
         color: rgb(245, 245, 245);
     }
@@ -1034,7 +1130,7 @@ body {
         height: auto;
         background: rgb(40, 15, 47);
         clip-path: polygon(0 2%, 30% 0, 100% 3%, 100% 100%, 0 100%);
-        margin-top: -40px;
+        margin-top: -100px;
         padding-top: 30px;
         padding-bottom: 40px;
     }
@@ -1089,6 +1185,38 @@ body {
         min-height: 200px;
         margin: auto;
         margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .projects-list-item > img {
+        width: 80%;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .projects-list-item > h2 {
+        color: rgb(184, 184, 184);
+        font-size: 1.4em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .projects-list-item > p {
+        color: rgb(139, 139, 139);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .projects-skills {
+        display: flex;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .projects-skills > span {
+        border: 2px solid rgb(79, 38, 79);
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(68, 35, 68);
+        color: rgb(143, 104, 181);
     }
 
     .education {
