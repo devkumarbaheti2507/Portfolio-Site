@@ -24,6 +24,10 @@ body {
     margin-left: 2px;
 }
 
+.projects-list-item {
+    cursor: pointer;
+}
+
 #typed-text {
     color: rgb(193, 134, 223);
 }
