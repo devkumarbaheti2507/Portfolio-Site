@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(type, 1000);
 
     const webCalc = document.getElementById("webCalc");
-    webCalc.addEventListener("click" () => {
+    webCalc.addEventListener("click", () => {
         window.open("https://devkumarbaheti2507.github.io/Web-Calculator/", "_blank");
     });
 });
