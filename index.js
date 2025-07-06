@@ -47,8 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(type, 1000);
 
+    const stockSpan = document.getElementById("stockSpan");
+    const minimizedCash = document.getElementById("minimizedCash");
     const webCalc = document.getElementById("webCalc");
+    const classicSnake = document.getElementById("classicSnake");
+
+    stockSpan.addEventListener("click", () => {
+        window.open("https://github.com/devkumarbaheti2507/Stock-Span-Market-Analyzer.git", "_blank");
+    });
+    minimizedCash.addEventListener("click", () => {
+        window.open("https://github.com/devkumarbaheti2507/Minimized-Cash-Flow.git", "_blank");
+    });
     webCalc.addEventListener("click", () => {
         window.open("https://devkumarbaheti2507.github.io/Web-Calculator/", "_blank");
+    });
+    classicSnake.addEventListener("click", () => {
+        window.open("https://github.com/devkumarbaheti2507/Snake-Game.git", "_blank");
     });
 });
